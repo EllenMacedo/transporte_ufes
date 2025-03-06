@@ -1,4 +1,4 @@
-INSERT INTO usuario (idUsuario,nome, email, senha, tipo, matricula, telefone) VALUES
+INSERT INTO usuario (idUsuario, nome, email, senha, tipo, matricula, telefone) VALUES
 (1, 'Administrador', 'admin@ufes.br', 'root', 'admin', '20220001', '28999999999'),
 (2, 'Maria Oliveira', 'maria.oliveira@ufes.br', 'senha456', 'aluno', '20220002', '28988888888'),
 (3, 'Carlos Pereira', 'carlos.pereira@ufes.br', 'senha789', 'motorista', '00000001', '28977777777'),
@@ -13,15 +13,16 @@ INSERT INTO usuario (idUsuario,nome, email, senha, tipo, matricula, telefone) VA
 
 INSERT INTO veiculo (idVeiculo, placa, modelo, capacidade, status, idMotorista) VALUES
 (1, 'ABD1234', 'Ônibus 1', 40, 'ativo', 3),
-(2, 'DEF5678', 'Ônibus 2', 45, 'ativo', 4),
-(3, 'GHI9101', 'Ônibus 3', 50, 'ativo', 5),
-(4, 'JKL1122', 'Micro-ônibus 1', 2, 'ativo', 6),
-(5, 'MNO3344', 'Micro-ônibus 2', 2, 'ativo', 7),
-(6, 'PQR5566', 'Van 1', 15, 'ativo', 8),
-(7, 'STU7788', 'Van 2', 15, 'manutencao', 9),
-(8, 'VWX9900', 'Ônibus 4', 40, 'ativo', 1),
-(9, 'YZA2233', 'Ônibus 5', 40, 'inativo', 1),
-(10, 'BCD4455', 'Van 3', 15, 'ativo', 8);
+(2, 'DEF5678', 'Ônibus 2', 45, 'ativo', 9), 
+(3, 'GHI9101', 'Ônibus 3', 50, 'ativo', 3),
+(4, 'JKL1122', 'Micro-ônibus 1', 20, 'ativo', 9),
+(5, 'MNO3344', 'Micro-ônibus 2', 20, 'ativo', 3),
+(6, 'PQR5566', 'Van 1', 15, 'ativo', 9),
+(7, 'STU7788', 'Van 2', 15, 'manutencao', 3),
+(8, 'VWX9900', 'Ônibus 4', 40, 'ativo', 9),
+(9, 'YZA2233', 'Ônibus 5', 40, 'inativo', 3),
+(10, 'BCD4455', 'Van 3', 15, 'ativo', 9);
+
 
 INSERT INTO cidade (idCidade, nome, uf) VALUES
 (1, 'Alegre', 'ES'),
@@ -59,10 +60,10 @@ INSERT INTO rota_cidade (idRotaCidade, idRota, idCidade, ordem) VALUES
 INSERT INTO viagem (idViagem, idVeiculo, idMotorista, idRota, datas, hora, vagasDisponiveis, status) VALUES
 (1, 1, 3, 1, '2025-03-02', '06:30:00', 25, 'agendada'),
 (2, 2, 9, 2, '2025-03-02', '18:00:00', 40, 'agendada'), 
-(3, 3, 7, 3, '2025-03-02', '07:00:00', 35, 'agendada'), 
-(4, 4, 10, 4, '2025-03-02', '17:30:00', 30, 'agendada'), 
-(5, 5, 1, 5, '2025-03-02', '08:00:00', 20, 'agendada'),
-(6, 6, 6, 6, '2025-03-02', '16:30:00', 25, 'agendada'); 
+(3, 3, 3, 3, '2025-03-02', '07:00:00', 35, 'agendada'), 
+(4, 4, 9, 4, '2025-03-02', '17:30:00', 30, 'agendada'), 
+(5, 5, 3, 5, '2025-03-02', '08:00:00', 20, 'agendada'),
+(6, 6, 9, 6, '2025-03-02', '16:30:00', 25, 'agendada');
 
 
 INSERT INTO reserva (idReserva, idUsuario, idViagem, status) VALUES
