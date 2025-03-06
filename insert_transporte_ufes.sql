@@ -3,12 +3,12 @@ INSERT INTO usuario (idUsuario, nome, email, senha, tipo, matricula, telefone) V
 (2, 'Maria Oliveira', 'maria.oliveira@ufes.br', 'senha456', 'aluno', '20220002', '28988888888'),
 (3, 'Carlos Pereira', 'carlos.pereira@ufes.br', 'senha789', 'motorista', '00000001', '28977777777'),
 (4, 'Ana Costa', 'ana.costa@ufes.br', 'senha1234', 'aluno', '20220003', '28966666666'),
-(5, 'Lucas Santos', 'lucas.santos@ufes.br', 'senha5678', 'servidor', '00000002', '28955555555'),
+(5, 'Lucas Santos', 'lucas.santos@ufes.br', 'senha5678', 'admin', '00000002', '28955555555'),
 (6, 'Fernanda Rocha', 'fernanda.rocha@ufes.br', 'senha910', 'aluno', '20220004', '27944444444'),
 (7, 'Pedro Souza', 'pedro.souza@ufes.br', 'senha111', 'aluno', '20220005', '28933333333'),
 (8, 'Juliana Almeida', 'juliana.almeida@ufes.br', 'senha222', 'admin', '00000003', '28922222222'),
 (9, 'Roberto Lima', 'roberto.lima@ufes.br', 'senha333', 'motorista', '00000004', '28911111111'),
-(10, 'Patrícia Gomes', 'patricia.gomes@ufes.br', 'senha444', 'servidor', '00000005', '28900000000');
+(10, 'Patrícia Gomes', 'patricia.gomes@ufes.br', 'senha444', 'admin', '00000005', '28900000000');
 
 
 INSERT INTO veiculo (idVeiculo, placa, modelo, capacidade, status, idMotorista) VALUES
